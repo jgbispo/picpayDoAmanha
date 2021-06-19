@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PicPayDoAmanhã</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="./assets/logo.svg" alt="logo-PicPay">
+        <h1>Programa Jovem Aprendiz PicPay</h1>
+    </header>
+    <main class="container">
+        <div class="formStyle">
+            <div class="form">
+                <div id="form">
+                    <!-- Form -->
+                    <form onsubmit="Form.submit(event);">
+                        <div class="input-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" placeholder="Nome">
+                        </div>
+                        <div class="input-group">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+                        </div>
+                        <div class="input-group">
+                            <label for="date">Data de Nascimento</label>
+                            <input type="date" name="date" id="date" placeholder="Data de Nascimento">
+                        </div>
+                        <div class="input-group action">
+                            <button>Cadastrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="registros">
+            <!-- Table transaction -->
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Sobrenome</th>
+                        <th>Data de Nascimento</th>
+                        <th>Idade</th>
+                        <th>Maior de Idade</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
